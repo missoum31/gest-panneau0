@@ -26,7 +26,7 @@ Public Class share
     Sub directionPopulate()
 
 
-
+dim myreads as sqldatareader
         Dim myread As sqldataadapter
         Dim mycomad As SqlCommand
         Dim sql As String = "select *from direction"
