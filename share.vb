@@ -26,8 +26,8 @@ Public Class share
     Sub directionPopulate()
 
 
-dim myreads as sqldatareader
-        Dim myread As sqldataadapter
+
+        Dim myread As SqlDataReader
         Dim mycomad As SqlCommand
         Dim sql As String = "select *from direction"
         mycomad = New SqlCommand(sql, con)
@@ -68,6 +68,11 @@ dim myreads as sqldatareader
 
     End Sub
 
+
+
+
+
+
     Protected Function validerForm(ddpaneau As DropDownList, ddchifre As DropDownList, grd As GridView, myconnection As SqlConnection) As Boolean
 
         'Dim curenrDrop As DropDownList = sender
@@ -80,7 +85,10 @@ dim myreads as sqldatareader
         Dim nombre As Integer = 0
         Dim resultat As Object = New Object()
         Dim mycome As SqlCommand = New SqlCommand()
-      
+        'Dim nub As String = ddp.SelectedValue
+        '   Dim riders As SqlCommand
+        'mycome = New SqlCommand(somme, myConnection)
+        '    mycome.CommandType = CommandType.Text
         Dim flag As Boolean = True
         Dim i As Integer
 
